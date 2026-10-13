@@ -11,12 +11,12 @@ class Program
     poder utilizarlo*/
     Stopwatch cronometro = new Stopwatch();
 
-    cronometro.Start();
+    cronometro.Start(); // método "Start"
 
     Console.WriteLine("Pulsa INTRO lo más rápido posible...");
     Console.ReadLine();
 
-    cronometro.Stop();
+    cronometro.Stop(); // método "Stop"
 
     Console.WriteLine($"Has tardado {cronometro.ElapsedMilliseconds} ms");
   }
