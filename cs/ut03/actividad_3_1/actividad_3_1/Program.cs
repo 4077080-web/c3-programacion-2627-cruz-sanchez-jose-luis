@@ -9,6 +9,10 @@ class Program
         int num1 = Convert.ToInt32(Console.ReadLine());
         //PROFESOR::completa el programa para que cumpla con las especificaciones del enunciado
         Console.WriteLine("Indica el segundo número:");   
-        int num2 = Convert.ToInt32(Console.ReadLine());     
+        int num2 = Convert.ToInt32(Console.ReadLine());  
+        if (num1<num2)
+        {
+            Console.WriteLine("OK!");
+        }
     }
 }
