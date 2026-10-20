@@ -14,6 +14,21 @@ class Program
         {
             Console.WriteLine("Demasiado corta, debe contener al menos 8 caracteres");
         }
+        else
+        {
+            // voy a declarar y asignar dos variables con las versiones
+            // en mayúsculas y minúsculas del password introducido
+            string pass_en_mayusculas = password.ToUpper();
+            string pass_en_minusculas = password.ToLower();
+            if (password==pass_en_mayusculas)
+            {
+                Console.WriteLine("Debería contener alguna minúscula");
+            }
+            if (password==pass_en_minusculas)
+            {
+                Console.WriteLine("Debería contener alguna mayúscula");
+            }
+        }
         
     }
 }
