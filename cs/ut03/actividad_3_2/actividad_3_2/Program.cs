@@ -24,7 +24,14 @@ class Program
         // para ello, veré si es múltiplo de 2
         if (num1 % 2 ==0)
         {
-            Console.WriteLine("Es par");
+            if (num1 % 10 ==0)
+            {
+                Console.WriteLine("Es múltiplo de 10");
+            }
+            else
+            {
+                Console.WriteLine("Es par");    
+            }            
         }
         else
         {
