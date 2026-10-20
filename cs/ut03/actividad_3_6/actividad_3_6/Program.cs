@@ -12,6 +12,7 @@ class Program
         for (int n=1;n<=limite_maximo;n++)
         {
             sumatorio = sumatorio + n; // forma abreviada equivalente: sumatorio += n;
+            factorial = factorial * n; // forma abreviada equivalente: factorial *= n;
         }
     }
 }
