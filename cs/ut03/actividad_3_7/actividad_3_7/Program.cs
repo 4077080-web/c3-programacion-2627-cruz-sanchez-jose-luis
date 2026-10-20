@@ -14,5 +14,6 @@ class Program
             // la última instrucción es volver a pedir otro número
             numero = Convert.ToInt32(Console.ReadLine());            
         }
+        Console.WriteLine(sumatorio);
     }
 }
