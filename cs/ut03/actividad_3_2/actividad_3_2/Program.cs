@@ -15,9 +15,10 @@ class Program
         {
             Console.WriteLine("Es cero");            
         }
-        else 
+        else // si no es cero ni positivo, será negativo
         {
-            Console.WriteLine("Negativo");
+            int num1_en_positivo = -num1; // tb podría ser = num1 * -1;
+            Console.WriteLine($"Negativo, su valor en positivo es {num1_en_positivo}");
         }
         // Voy a comprobar si es par o impar
         // para ello, veré si es múltiplo de 2
