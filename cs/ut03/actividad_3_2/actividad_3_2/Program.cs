@@ -7,5 +7,17 @@ class Program
         Console.WriteLine("Indica un número entero y yo intentaré decirte algo sobre él:");        
         int num1 = Convert.ToInt32(Console.ReadLine());
         //PROFESOR::completa el programa para que cumpla con las especificaciones del enunciado
+        if (num1>0) // detecto que el número es positivo
+        {
+            Console.WriteLine("Positivo");
+        }
+        else if (num1==0)
+        {
+            Console.WriteLine("Es cero");            
+        }
+        else 
+        {
+            Console.WriteLine("Negativo");
+        }
     }
 }
