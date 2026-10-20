@@ -18,5 +18,8 @@ class Program
         }
         Console.WriteLine($"El contador es {contador}");
         Console.WriteLine($"El sumatorio es {sumatorio}");
+        // Paso ahora a calcular y mostrar la media
+        double media = (double)sumatorio / (double)contador;
+        Console.WriteLine($"La media es {media}");
     }
 }
