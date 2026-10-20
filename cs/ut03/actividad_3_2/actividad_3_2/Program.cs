@@ -19,5 +19,15 @@ class Program
         {
             Console.WriteLine("Negativo");
         }
+        // Voy a comprobar si es par o impar
+        // para ello, veré si es múltiplo de 2
+        if (num1 % 2 ==0)
+        {
+            Console.WriteLine("Es par");
+        }
+        else
+        {
+            Console.WriteLine("Es impar");
+        }
     }
 }
