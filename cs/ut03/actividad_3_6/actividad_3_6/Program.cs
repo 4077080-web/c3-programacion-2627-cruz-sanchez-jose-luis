@@ -9,5 +9,9 @@ class Program
         int factorial=1;
         int sumatorio=0;
         //PROFESOR::usando un bucle for, completa el programa para que calcule el sumatorio y el factorial del número introducido y los muestre por pantalla
+        for (int n=1;n<=limite_maximo;n++)
+        {
+            sumatorio = sumatorio + n; // forma abreviada equivalente: sumatorio += n;
+        }
     }
 }
