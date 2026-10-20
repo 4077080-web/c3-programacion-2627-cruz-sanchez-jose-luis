@@ -24,9 +24,26 @@ class Program
             {
                 Console.WriteLine("Debería contener alguna minúscula");
             }
-            if (password==pass_en_minusculas)
+            // pongo else para poder aislar (en el último else)...
+            // ,,,el caso de que todas las comprobaciones han ido bien
+            else if (password==pass_en_minusculas)
             {
                 Console.WriteLine("Debería contener alguna mayúscula");
+            }
+            else // pasamos a repetir la contraseña
+            {
+                // pido otra vez la contraseña
+                Console.WriteLine("Repita la contraseña:"); 
+                string password2 = Console.ReadLine();
+                //compruebo que coincida con la anterior
+                if (password==password2)
+                {
+                    Console.WriteLine("Contraseña cambiada correctamente");
+                }
+                else
+                {
+                    Console.WriteLine("Las contraseñas no coinciden");
+                }
             }
         }
         
