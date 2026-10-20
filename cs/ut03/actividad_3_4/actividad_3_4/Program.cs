@@ -24,23 +24,18 @@ class Program
 */
         Console.WriteLine(RATING_WELCOME);
         int calificacion = Convert.ToInt32(Console.ReadLine());
-        string valoracion_como_texto="";
+        string mensaje_final="";
         //PROFESOR::completa el programa para que cumpla con las especificaciones del enunciado
-        if (calificacion>=1 && calificacion<=5)
+        switch (calificacion)
         {
-            switch (calificacion)
-            {
-                case 1: valoracion_como_texto = RATING_1; break;
-                case 2: valoracion_como_texto = RATING_2; break;
-                case 3: valoracion_como_texto = RATING_3; break;
-                case 4: valoracion_como_texto = RATING_4; break;
-                case 5: valoracion_como_texto = RATING_5; break;
-            }
-            Console.WriteLine(RATING_TEXT + valoracion_como_texto);
+            case 1: mensaje_final = RATING_TEXT+RATING_1; break;
+            case 2: mensaje_final = RATING_TEXT+RATING_2; break;
+            case 3: mensaje_final = RATING_TEXT+RATING_3; break;
+            case 4: mensaje_final = RATING_TEXT+RATING_4; break;
+            case 5: mensaje_final = RATING_TEXT+RATING_5; break;
+            default: mensaje_final = RATING_ERROR; break;
+
         }
-        else
-        {
-            Console.WriteLine(RATING_ERROR);
-        }
+        Console.WriteLine(mensaje_final);
     }
 }
