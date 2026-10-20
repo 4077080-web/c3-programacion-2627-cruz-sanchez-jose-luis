@@ -14,6 +14,10 @@ class Program
         {
             Console.WriteLine("OK!");
         }
+        else if (num1==num2)
+        {
+            Console.WriteLine("IGUALES!");
+        }
         else
         {
             Console.WriteLine("INCORRECTO!");
