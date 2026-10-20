@@ -20,6 +20,9 @@ class Program
         Console.WriteLine($"El sumatorio es {sumatorio}");
         // Paso ahora a calcular y mostrar la media
         double media = (double)sumatorio / (double)contador;
+        //ahora aplico el redondeo, antes de mostrarlo
+        media = Math.Round(media,4);
+        //una vez redondeada, la muestro
         Console.WriteLine($"La media es {media}");
     }
 }
